@@ -14,19 +14,28 @@
         {
           "name": "ground",
           "type": "ground",
-          "ranges": [[0, 212, 13, 2]]
+          "ranges": [[0, 212, 12, 2]]
+        },
+        {
+          "pattern": "cannon-2h",
+          "ranges": [[0, 10]]
         }
       ]
     }
   ],
 
-  "entities": [],
+  "entities": [
+    {
+      "name": "cannon",
+      "pos": [8, 160]
+    }
+  ],
 
   "triggers": [
     {
       "type": "goto",
       "name": "1-1",
-      "pos": [64, 64]
+      "pos": [50, 0]
     }
   ]
 }

@@ -1,0 +1,36 @@
+{
+    "imageURL": "images/takashi.png",
+    "frames": [
+      {
+        "name": "idle",
+        "rect": [4, 4, 45, 60]
+      },
+      {
+        "name": "run-1",
+        "rect": [4, 4, 45, 60]
+      },
+      {
+        "name": "run-2",
+        "rect": [150, 5, 45, 70]
+      },
+      {
+        "name": "run-3",
+        "rect": [150, 5, 45, 70]
+      },
+      {
+        "name": "brake",
+        "rect": [150, 5, 45, 70]
+      },
+      {
+        "name": "jump",
+        "rect": [150, 5, 45, 70]
+      }
+    ],
+    "animations": [
+      {
+        "name": "run",
+        "frameLength": 6,
+        "frames": ["run-1", "run-2", "brake"]
+      }
+    ]
+  }
