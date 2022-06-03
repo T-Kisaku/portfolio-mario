@@ -1,4 +1,4 @@
-import { Entity, Side } from '../Entity'
+import { Entity, Side } from '../entities/Entity'
 import { TileResolverMatch } from '../TileResolver'
 import { Trait } from '../Trait'
 

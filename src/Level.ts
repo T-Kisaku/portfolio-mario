@@ -1,6 +1,6 @@
 import { Camera } from './Camera'
-import { Entity } from './Entity'
-import { EntityCollider } from './EntityCollider'
+import { Entity } from './entities/Entity'
+import { EntityCollider } from './entities/Entity/EntityCollider'
 import { GameContext } from './GameContext'
 import { MusicController } from './MusicController'
 import { findPlayers } from './player'

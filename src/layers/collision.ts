@@ -1,5 +1,5 @@
 import { Camera } from '../Camera'
-import { Entity } from '../Entity'
+import { Entity } from '../entities/Entity'
 import { Level } from '../Level'
 import { TileResolver } from '../TileResolver'
 

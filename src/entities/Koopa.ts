@@ -1,4 +1,4 @@
-import { Entity } from '../Entity'
+import { Entity } from './Entity'
 import { GameContext } from '../GameContext'
 import { loadSpriteSheet } from '../loaders/sprite'
 import { SpriteSheet } from '../SpriteSheet'

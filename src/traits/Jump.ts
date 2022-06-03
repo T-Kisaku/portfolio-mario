@@ -1,4 +1,4 @@
-import { Entity, Side } from '../Entity'
+import { Entity, Side } from '../entities/Entity'
 import { GameContext } from '../GameContext'
 import { Trait } from '../Trait'
 

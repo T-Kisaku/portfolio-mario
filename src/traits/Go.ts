@@ -1,4 +1,4 @@
-import { Entity } from '../Entity'
+import { Entity } from '../entities/Entity'
 import { GameContext } from '../GameContext'
 import { Trait } from '../Trait'
 import { Jump } from './Jump'

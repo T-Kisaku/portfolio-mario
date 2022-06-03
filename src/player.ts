@@ -1,4 +1,4 @@
-import { Entity } from './Entity'
+import { Entity } from './entities/Entity'
 import { Player } from './traits/Player'
 import { PlayerController } from './traits/PlayerController'
 

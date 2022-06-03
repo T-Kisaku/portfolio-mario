@@ -1,5 +1,5 @@
 import { Animation } from '../animation'
-import { Entity } from '../Entity'
+import { Entity } from './Entity'
 import { loadSpriteSheet } from '../loaders/sprite'
 import { SpriteSheet } from '../SpriteSheet'
 import { Trait } from '../Trait'

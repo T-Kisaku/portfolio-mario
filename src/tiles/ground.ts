@@ -1,4 +1,4 @@
-import { Side } from '../Entity'
+import { Side } from '../entities/Entity'
 import { TileColliderHandler } from '../TileCollider'
 
 const handleX: TileColliderHandler = ({ entity, match }) => {

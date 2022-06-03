@@ -1,5 +1,5 @@
 import { EntityFactoryDict } from '../entities'
-import { Entity } from '../Entity'
+import { Entity } from '../entities/Entity'
 import { createBackgroundLayer } from '../layers/background'
 import { createSpriteLayer } from '../layers/sprites'
 import { Level } from '../Level'

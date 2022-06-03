@@ -1,6 +1,6 @@
 import { Animation } from '../animation'
 import { AudioBoard } from '../AudioBoard'
-import { Entity } from '../Entity'
+import { Entity } from './Entity'
 import { loadAudioBoard } from '../loaders/audio'
 import { loadSpriteSheet } from '../loaders/sprite'
 import { SpriteSheet } from '../SpriteSheet'

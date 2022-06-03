@@ -1,4 +1,4 @@
-import { Entity } from '../Entity'
+import { Entity } from '../entities/Entity'
 import { Trait } from '../Trait'
 import { Killable } from './Killable'
 

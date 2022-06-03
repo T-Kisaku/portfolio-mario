@@ -1,5 +1,5 @@
 import { Camera } from './Camera'
-import { Entity } from './Entity'
+import { Entity } from './entities/Entity'
 
 const mouseEvents = ['mousedown', 'mousemove']
 

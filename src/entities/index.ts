@@ -1,11 +1,11 @@
-import { loadBullet } from './entities/Bullet'
-import { loadCannon } from './entities/Cannon'
-import { loadGoomba } from './entities/Goomba'
-import { loadKoopa } from './entities/Koopa'
-import { loadMario } from './entities/Mario'
-import { loadTakashi } from './entities/Takashi'
+import { loadBullet } from './Bullet'
+import { loadCannon } from './Cannon'
+import { loadGoomba } from './Goomba'
+import { loadKoopa } from './Koopa'
+import { loadMario } from './Mario'
+import { loadTakashi } from './Takashi'
 import { Entity } from './Entity'
-import { Dict } from './types'
+import { Dict } from '../types'
 
 export type EntityFactory = () => Entity
 

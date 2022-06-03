@@ -1,4 +1,4 @@
-import { Entity } from './Entity'
+import { Entity } from '.'
 
 export class EntityCollider {
   constructor(public entities: Set<Entity>) {}

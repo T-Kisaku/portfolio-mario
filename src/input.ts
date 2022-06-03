@@ -1,6 +1,6 @@
 // import { Mario } from './entities/Mario'
 import { Takashi } from './entities/Takashi'
-import { Entity } from './Entity'
+import { Entity } from './entities/Entity'
 import { InputRouter } from './InputRouter'
 import { Keyboard } from './Keyboard'
 import { Go } from './traits/Go'

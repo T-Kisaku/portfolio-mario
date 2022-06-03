@@ -1,5 +1,5 @@
 import { loadEntities } from './entities'
-import { Entity } from './Entity'
+import { Entity } from './entities/Entity'
 import { GameContext } from './GameContext'
 import { setupKeyboard } from './input'
 import { createCollisionLayer } from './layers/collision'
