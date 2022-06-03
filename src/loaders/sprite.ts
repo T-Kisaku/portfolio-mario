@@ -1,5 +1,5 @@
 import { createAnimation } from '../animation'
-import { loadImage, loadJSON } from '../loaders'
+import { loadImage, loadJSON } from '.'
 import { SpriteSheet } from '../SpriteSheet'
 import { SpriteSheetSpec } from './types'
 

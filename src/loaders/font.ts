@@ -1,4 +1,4 @@
-import { loadImage } from '../loaders'
+import { loadImage } from '.'
 import { SpriteSheet } from '../SpriteSheet'
 
 const characters =

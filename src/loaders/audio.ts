@@ -1,5 +1,5 @@
 import { AudioBoard } from '../AudioBoard'
-import { loadJSON } from '../loaders'
+import { loadJSON } from '.'
 
 export function createAudioLoader(context: AudioContext) {
   return async function loadAudio(url: string) {
