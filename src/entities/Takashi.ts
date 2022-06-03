@@ -29,7 +29,8 @@ export class Takashi extends Entity {
     ) {
         super()
 
-        this.size.set(14, 16)
+        // width, height
+        this.size.set(16*2, 16*3+5)
 
         this.go.dragFactor = SLOW_DRAG
         this.killable.removeAfter = 0
@@ -72,10 +73,9 @@ export class Takashi extends Entity {
 
 export async function loadTakashi(audioContext: AudioContext) {
     const [takashiSprites, audioBoard] = await Promise.all([
-        loadSpriteSheet('takashi'),
+        loadSpriteSheet('takashi', 32,32),
         loadAudioBoard('takashi', audioContext),
     ])
-
     const runAnimation = takashiSprites.getAnimation('run')
 
     return function createTakashi() {

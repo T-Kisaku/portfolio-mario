@@ -11,20 +11,20 @@ export class SpriteSheet {
     public tileHeight: number,
   ) {}
 
-  define(name: string, x: number, y: number, width: number, height: number) {
+  define(name: string, x: number, y: number, sWidth: number, sHeight: number, dWidth?: number, dHeight?: number) {
     const buffers = [false, true].map((flipped) => {
       const buffer = document.createElement('canvas')
-      buffer.width = width
-      buffer.height = height
+      buffer.width = sWidth
+      buffer.height = sHeight
 
       const context = buffer.getContext('2d') || raise('Canvas not supported')
 
       if (flipped) {
         context.scale(-1, 1)
-        context.translate(-width, 0)
+        context.translate(-sWidth, 0)
       }
 
-      context.drawImage(this.image, x, y, width, height, 0, 0, width, height)
+      context.drawImage(this.image, x, y, sWidth, sHeight, 0, 0, dWidth || sWidth, dHeight || sHeight)
 
       return buffer
     })

@@ -3,11 +3,11 @@ import { loadImage, loadJSON } from '.'
 import { SpriteSheet } from '../SpriteSheet'
 import { SpriteSheetSpec } from './types'
 
-export async function loadSpriteSheet(name: string) {
+export async function loadSpriteSheet(name:string, dWidth?:number, dHeight?:number) {
+
   const url = `sprites/${name}.json`
   const sheetSpec = await loadJSON<SpriteSheetSpec>(url)
   const image = await loadImage(sheetSpec.imageURL)
-
   const sprites = new SpriteSheet(image, sheetSpec.tileW, sheetSpec.tileH)
 
   if (sheetSpec.tiles) {
@@ -20,7 +20,7 @@ export async function loadSpriteSheet(name: string) {
   if (sheetSpec.frames) {
     sheetSpec.frames.forEach(frameSpec => {
       const [x, y, width, height] = frameSpec.rect
-      sprites.define(frameSpec.name, x, y, width, height)
+      sprites.define(frameSpec.name, x, y, width, height, dWidth, dHeight)
     })
   }
 
