@@ -1,20 +1,4 @@
-export function loadImage(url: string, options?: {}) {
-  if (options === undefined) {
-    return new Promise<HTMLImageElement>((resolve, reject) => {
-      const image = new Image()
-
-      image.addEventListener('load', () => {
-        resolve(image)
-      })
-
-      image.addEventListener('error', () => {
-        reject(`Could not load image from ${url}`)
-      })
-
-      image.src = url
-    })
-  }
-
+export function loadImage(url: string) {
   return new Promise<HTMLImageElement>((resolve, reject) => {
     const image = new Image()
 

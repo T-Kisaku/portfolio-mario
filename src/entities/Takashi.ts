@@ -14,6 +14,11 @@ import { Stomper } from '../traits/Stomper'
 const FAST_DRAG = 1 / 5000
 const SLOW_DRAG = 1 / 1000
 
+const SIZE = {
+    width: 16*2.2,
+    height: 16*2.2
+}
+
 export class Takashi extends Entity {
     jump = this.addTrait(new Jump())
     go = this.addTrait(new Go())
@@ -30,7 +35,7 @@ export class Takashi extends Entity {
         super()
 
         // width, height
-        this.size.set(16*2, 16*3+5)
+        this.size.set(SIZE.width, SIZE.width)
 
         this.go.dragFactor = SLOW_DRAG
         this.killable.removeAfter = 0
@@ -73,7 +78,7 @@ export class Takashi extends Entity {
 
 export async function loadTakashi(audioContext: AudioContext) {
     const [takashiSprites, audioBoard] = await Promise.all([
-        loadSpriteSheet('takashi', 32,32),
+        loadSpriteSheet('takashi', SIZE.width, SIZE.height),
         loadAudioBoard('takashi', audioContext),
     ])
     const runAnimation = takashiSprites.getAnimation('run')

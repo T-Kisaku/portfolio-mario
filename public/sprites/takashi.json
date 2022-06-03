@@ -3,34 +3,30 @@
     "frames": [
       {
         "name": "idle",
-        "rect": [4, 4, 45, 60]
+        "rect": [10, 10, 190, 320]
       },
       {
         "name": "run-1",
-        "rect": [4, 4, 45, 60]
+        "rect": [210, 10, 270, 300]
       },
       {
         "name": "run-2",
-        "rect": [150, 5, 45, 70]
-      },
-      {
-        "name": "run-3",
-        "rect": [150, 5, 45, 70]
+        "rect": [500, 10, 270, 300]
       },
       {
         "name": "brake",
-        "rect": [150, 5, 45, 70]
+        "rect": [500, 10, 270, 300]
       },
       {
         "name": "jump",
-        "rect": [150, 5, 45, 70]
+        "rect": [800, 10, 270, 300]
       }
     ],
     "animations": [
       {
         "name": "run",
-        "frameLength": 6,
-        "frames": ["run-1", "run-2", "brake"]
+        "frameLength": 10,
+        "frames": ["run-1","run-1","run-1","run-1","run-1","run-1","run-1","run-2","run-2"]
       }
     ]
   }
