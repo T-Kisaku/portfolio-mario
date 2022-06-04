@@ -1,7 +1,7 @@
 import { Entity } from '../../entities/Entity'
 import { GameContext } from '../../GameContext'
 import { Level } from '../../Level'
-import { Vec2 } from '../../math'
+import { Vec2 } from '../../utils/math'
 import { Trait } from '../Trait'
 import { Killable } from './Killable'
 

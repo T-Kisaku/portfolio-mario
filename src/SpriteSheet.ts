@@ -1,5 +1,5 @@
 import { Animation } from './animation'
-import { raise } from './raise'
+import { raise } from './utils/raise'
 
 export class SpriteSheet {
   tiles = new Map<string, HTMLCanvasElement[]>()

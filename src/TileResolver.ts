@@ -1,5 +1,5 @@
 import { LevelSpecTile } from './loaders/types'
-import { Matrix } from './math'
+import { Matrix } from './utils/math'
 
 export type TileResolverMatch = {
   tile: LevelSpecTile

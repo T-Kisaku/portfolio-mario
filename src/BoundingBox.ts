@@ -1,4 +1,4 @@
-import { Vec2 } from './math'
+import { Vec2 } from './utils/math'
 
 export class BoundingBox {
   constructor(public pos: Vec2, public size: Vec2, public offset: Vec2) {}

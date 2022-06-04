@@ -1,6 +1,6 @@
 import { Camera } from '../Camera'
 import { Entity } from '../entities/Entity'
-import { raise } from '../raise'
+import { raise } from '../utils/raise'
 
 export function createSpriteLayer(
   entities: Set<Entity>,

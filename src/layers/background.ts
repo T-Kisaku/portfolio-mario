@@ -1,6 +1,6 @@
 import { Camera } from '../Camera'
 import { Level } from '../Level'
-import { raise } from '../raise'
+import { raise } from '../utils/raise'
 import { SpriteSheet } from '../SpriteSheet'
 import { TileResolver, TileResolverMatrix } from '../TileResolver'
 

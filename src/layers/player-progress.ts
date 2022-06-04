@@ -1,7 +1,7 @@
 import { Level } from '../Level'
 import { Font } from '../loaders/font'
 import { findPlayers } from '../player'
-import { raise } from '../raise'
+import { raise } from '../utils/raise'
 import { Player } from '../traits/data/Player'
 
 function getPlayer(level: Level) {

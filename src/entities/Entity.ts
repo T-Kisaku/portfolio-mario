@@ -3,7 +3,7 @@ import { BoundingBox } from '../BoundingBox'
 import { EventBuffer } from '../EventBuffer'
 import { GameContext } from '../GameContext'
 import { Level } from '../Level'
-import { Vec2 } from '../math'
+import { Vec2 } from '../utils/math'
 import { TileResolverMatch } from '../TileResolver'
 import { Trait } from '../traits/Trait'
 
