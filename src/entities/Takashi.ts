@@ -15,14 +15,18 @@ const FAST_DRAG = 1 / 5000
 const SLOW_DRAG = 1 / 1000
 
 const SIZE = {
-    width: 16*2.2,
-    height: 16*2.2
+    // width: 16*4,
+    // height: 16*4,
+    width: 16*2,
+    height: 16*2
+
 }
 
 export class Takashi extends Entity {
     jump = this.addTrait(new Jump())
     go = this.addTrait(new Go())
     stomper = this.addTrait(new Stomper())
+
     killable = this.addTrait(new Killable())
     solid = this.addTrait(new Solid())
     physics = this.addTrait(new Physics())
@@ -30,7 +34,7 @@ export class Takashi extends Entity {
     constructor(
         private sprites: SpriteSheet,
         public audio: AudioBoard,
-        private runAnimation: Animation,
+        private animations: {run: Animation, jump: Animation}
     ) {
         super()
 
@@ -45,7 +49,7 @@ export class Takashi extends Entity {
 
     resolveAnimationFrame() {
         if (this.jump.falling) {
-            return 'jump'
+            return this.animations.jump(this.go.distance)
         }
 
         if (this.go.distance > 0) {
@@ -56,7 +60,7 @@ export class Takashi extends Entity {
                 return 'brake'
             }
 
-            return this.runAnimation(this.go.distance)
+            return this.animations.run(this.go.distance)
         }
         return 'idle'
     }
@@ -81,9 +85,15 @@ export async function loadTakashi(audioContext: AudioContext) {
         loadSpriteSheet('takashi', SIZE.width, SIZE.height),
         loadAudioBoard('takashi', audioContext),
     ])
-    const runAnimation = takashiSprites.getAnimation('run')
 
     return function createTakashi() {
-        return new Takashi(takashiSprites, audioBoard, runAnimation)
+        return new Takashi(
+            takashiSprites,
+            audioBoard,
+            {
+                run: takashiSprites.getAnimation('run'),
+                jump: takashiSprites.getAnimation('jump')
+            }
+        )
     }
 }
