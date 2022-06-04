@@ -1,6 +1,6 @@
 import { Side } from '../entities/Entity'
 import { TileColliderHandler } from '../TileCollider'
-import { Player } from '../traits/Player'
+import { Player } from '../traits/data/Player'
 
 const handleX: TileColliderHandler = ({ entity, match }) => {
   if (entity.vel.x > 0) {

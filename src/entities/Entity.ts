@@ -5,7 +5,7 @@ import { GameContext } from '../GameContext'
 import { Level } from '../Level'
 import { Vec2 } from '../math'
 import { TileResolverMatch } from '../TileResolver'
-import { Trait } from '../Trait'
+import { Trait } from '../traits/Trait'
 
 export enum Side {
   top,

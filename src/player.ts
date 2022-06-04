@@ -1,6 +1,6 @@
 import { Entity } from './entities/Entity'
-import { Player } from './traits/Player'
-import { PlayerController } from './traits/PlayerController'
+import { Player } from './traits/data/Player'
+import { PlayerController } from './traits/data/PlayerController'
 
 export function createPlayerEnv(playerEntity: Entity) {
   const playerEnv = new Entity()

@@ -1,5 +1,5 @@
 import { TileColliderHandler } from '../TileCollider'
-import { Player } from '../traits/Player'
+import { Player } from '../traits/data/Player'
 
 const handle: TileColliderHandler = ({ entity, match, resolver }) => {
   const player = entity.getTrait(Player)

@@ -2,12 +2,12 @@ import { Entity } from '../Entity'
 import { GameContext } from '../../GameContext'
 import { loadSpriteSheet } from '../../loaders/sprite'
 import { SpriteSheet } from '../../SpriteSheet'
-import { Trait } from '../../Trait'
-import { Killable } from '../../traits/Killable'
-import { PendulumMove } from '../../traits/PendulumMove'
-import { Physics } from '../../traits/Physics'
-import { Solid } from '../../traits/Solid'
-import { Stomper } from '../../traits/Stomper'
+import { Trait } from '../../traits/Trait'
+import { Killable } from '../../traits/data/Killable'
+import { PendulumMove } from '../../traits/data/PendulumMove'
+import { Physics } from '../../traits/data/Physics'
+import { Solid } from '../../traits/data/Solid'
+import { Stomper } from '../../traits/data/Stomper'
 
 enum KoopaState {
   walking,

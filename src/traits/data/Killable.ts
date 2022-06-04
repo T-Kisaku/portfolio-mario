@@ -1,6 +1,6 @@
-import { Entity } from '../entities/Entity'
-import { GameContext } from '../GameContext'
-import { Level } from '../Level'
+import { Entity } from '../../entities/Entity'
+import { GameContext } from '../../GameContext'
+import { Level } from '../../Level'
 import { Trait } from '../Trait'
 
 export class Killable extends Trait {

@@ -2,7 +2,7 @@ import { Level } from '../Level'
 import { Font } from '../loaders/font'
 import { findPlayers } from '../player'
 import { raise } from '../raise'
-import { Player } from '../traits/Player'
+import { Player } from '../traits/data/Player'
 
 function getPlayer(level: Level) {
   for (const entity of findPlayers(level.entities)) {

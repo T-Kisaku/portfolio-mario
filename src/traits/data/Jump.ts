@@ -1,5 +1,5 @@
-import { Entity, Side } from '../entities/Entity'
-import { GameContext } from '../GameContext'
+import { Entity, Side } from '../../entities/Entity'
+import { GameContext } from '../../GameContext'
 import { Trait } from '../Trait'
 
 export class Jump extends Trait {

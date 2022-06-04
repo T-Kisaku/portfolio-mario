@@ -1,4 +1,4 @@
-import { Entity, Side } from '../entities/Entity'
+import { Entity, Side } from '../../entities/Entity'
 import { Trait } from '../Trait'
 
 export class PendulumMove extends Trait {

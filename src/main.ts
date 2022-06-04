@@ -17,7 +17,7 @@ import { Scene } from './Scene'
 import { SceneRunner } from './SceneRunner'
 import { TimedScene } from './TimedScene'
 import { Timer } from './Timer'
-import { Player } from './traits/Player'
+import { Player } from './traits/data/Player'
 
 async function main(canvas: HTMLCanvasElement) {
   const videoContext = canvas.getContext('2d') || raise('Canvas not supported')

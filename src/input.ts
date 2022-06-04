@@ -3,8 +3,8 @@ import { Takashi } from './entities/data/Takashi'
 import { Entity } from './entities/Entity'
 import { InputRouter } from './InputRouter'
 import { Keyboard, KeyListener } from './Keyboard'
-import { Go } from './traits/Go'
-import { Jump } from './traits/Jump'
+import { Go } from './traits/data/Go'
+import { Jump } from './traits/data/Jump'
 
 export function setupKeyboard(target: EventTarget) {
   const input = new Keyboard()

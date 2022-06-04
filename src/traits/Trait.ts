@@ -1,7 +1,7 @@
-import { Entity, Side } from './entities/Entity'
-import { GameContext } from './GameContext'
-import { Level } from './Level'
-import { TileResolverMatch } from './TileResolver'
+import { Entity, Side } from '../entities/Entity'
+import { GameContext } from '../GameContext'
+import { Level } from '../Level'
+import { TileResolverMatch } from '../TileResolver'
 
 type TraitTask = (...args: any[]) => void
 

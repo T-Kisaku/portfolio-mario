@@ -4,12 +4,12 @@ import { Entity } from '../Entity'
 import { loadAudioBoard } from '../../loaders/audio'
 import { loadSpriteSheet } from '../../loaders/sprite'
 import { SpriteSheet } from '../../SpriteSheet'
-import { Go } from '../../traits/Go'
-import { Jump } from '../../traits/Jump'
-import { Killable } from '../../traits/Killable'
-import { Physics } from '../../traits/Physics'
-import { Solid } from '../../traits/Solid'
-import { Stomper } from '../../traits/Stomper'
+import { Go } from '../../traits/data/Go'
+import { Jump } from '../../traits/data/Jump'
+import { Killable } from '../../traits/data/Killable'
+import { Physics } from '../../traits/data/Physics'
+import { Solid } from '../../traits/data/Solid'
+import { Stomper } from '../../traits/data/Stomper'
 
 const FAST_DRAG = 1 / 5000
 const SLOW_DRAG = 1 / 1000

@@ -1,5 +1,5 @@
-import { Entity, Side } from '../entities/Entity'
-import { TileResolverMatch } from '../TileResolver'
+import { Entity, Side } from '../../entities/Entity'
+import { TileResolverMatch } from '../../TileResolver'
 import { Trait } from '../Trait'
 
 export class Solid extends Trait {
