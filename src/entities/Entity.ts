@@ -1,11 +1,11 @@
-import { AudioBoard } from '../../AudioBoard'
-import { BoundingBox } from '../../BoundingBox'
-import { EventBuffer } from '../../EventBuffer'
-import { GameContext } from '../../GameContext'
-import { Level } from '../../Level'
-import { Vec2 } from '../../math'
-import { TileResolverMatch } from '../../TileResolver'
-import { Trait } from '../../Trait'
+import { AudioBoard } from '../AudioBoard'
+import { BoundingBox } from '../BoundingBox'
+import { EventBuffer } from '../EventBuffer'
+import { GameContext } from '../GameContext'
+import { Level } from '../Level'
+import { Vec2 } from '../math'
+import { TileResolverMatch } from '../TileResolver'
+import { Trait } from '../Trait'
 
 export enum Side {
   top,

@@ -1,11 +1,13 @@
-import { loadBullet } from './Bullet'
-import { loadCannon } from './Cannon'
-import { loadGoomba } from './Goomba'
-import { loadKoopa } from './Koopa'
-import { loadMario } from './Mario'
-import { loadTakashi } from './Takashi'
 import { Entity } from './Entity'
 import { Dict } from '../types'
+
+/**Below things are implemented data of entity */
+import { loadBullet } from './data/Bullet'
+import { loadCannon } from './data/Cannon'
+import { loadGoomba } from './data/Goomba'
+import { loadKoopa } from './data/Koopa'
+import { loadMario } from './data/Mario'
+import { loadTakashi } from './data/Takashi'
 
 export type EntityFactory = () => Entity
 

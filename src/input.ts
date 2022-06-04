@@ -1,5 +1,5 @@
-import { Mario } from './entities/Mario'
-import { Takashi } from './entities/Takashi'
+import { Mario } from './entities/data/Mario'
+import { Takashi } from './entities/data/Takashi'
 import { Entity } from './entities/Entity'
 import { InputRouter } from './InputRouter'
 import { Keyboard, KeyListener } from './Keyboard'

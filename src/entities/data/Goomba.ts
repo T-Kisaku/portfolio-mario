@@ -1,13 +1,13 @@
-import { Animation } from '../animation'
-import { Entity } from './Entity'
-import { loadSpriteSheet } from '../loaders/sprite'
-import { SpriteSheet } from '../SpriteSheet'
-import { Trait } from '../Trait'
-import { Killable } from '../traits/Killable'
-import { PendulumMove } from '../traits/PendulumMove'
-import { Physics } from '../traits/Physics'
-import { Solid } from '../traits/Solid'
-import { Stomper } from '../traits/Stomper'
+import { Animation } from '../../animation'
+import { Entity } from '../Entity'
+import { loadSpriteSheet } from '../../loaders/sprite'
+import { SpriteSheet } from '../../SpriteSheet'
+import { Trait } from '../../Trait'
+import { Killable } from '../../traits/Killable'
+import { PendulumMove } from '../../traits/PendulumMove'
+import { Physics } from '../../traits/Physics'
+import { Solid } from '../../traits/Solid'
+import { Stomper } from '../../traits/Stomper'
 
 class GoombaBehavior extends Trait {
   collides(us: Entity, them: Entity) {

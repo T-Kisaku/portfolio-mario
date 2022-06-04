@@ -1,9 +1,9 @@
-import { Entity } from './Entity'
-import { GameContext } from '../GameContext'
-import { Level } from '../Level'
-import { loadAudioBoard } from '../loaders/audio'
-import { findPlayers } from '../player'
-import { Emitter } from '../traits/Emitter'
+import { Entity } from '../Entity'
+import { GameContext } from '../../GameContext'
+import { Level } from '../../Level'
+import { loadAudioBoard } from '../../loaders/audio'
+import { findPlayers } from '../../player'
+import { Emitter } from '../../traits/Emitter'
 
 const HOLD_FIRE_THRESHOLD = 30
 

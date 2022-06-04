@@ -1,12 +1,12 @@
-import { Entity } from './Entity'
-import { GameContext } from '../GameContext'
-import { Level } from '../Level'
-import { loadSpriteSheet } from '../loaders/sprite'
-import { Trait } from '../Trait'
-import { Gravity } from '../traits/Gravity'
-import { Killable } from '../traits/Killable'
-import { Stomper } from '../traits/Stomper'
-import { Velocity } from '../traits/Velocity'
+import { Entity } from '../Entity'
+import { GameContext } from '../../GameContext'
+import { Level } from '../../Level'
+import { loadSpriteSheet } from '../../loaders/sprite'
+import { Trait } from '../../Trait'
+import { Gravity } from '../../traits/Gravity'
+import { Killable } from '../../traits/Killable'
+import { Stomper } from '../../traits/Stomper'
+import { Velocity } from '../../traits/Velocity'
 
 class BulletBehavior extends Trait {
   gravity = new Gravity()
