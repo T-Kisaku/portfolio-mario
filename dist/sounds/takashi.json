@@ -1,7 +1,0 @@
-{
-  "fx": {
-    "coin": { "url": "/audio/coin.ogg" },
-    "jump": { "url": "/audio/I'm Takashi!!.ogg" },
-    "stomp": { "url": "/audio/I'm Takashi!!.ogg" }
-  }
-}
