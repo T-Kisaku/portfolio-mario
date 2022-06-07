@@ -3,7 +3,7 @@ import { loadImage, loadJSON } from '.'
 import { SpriteSheet } from '../SpriteSheet'
 import { SpriteSheetSpec } from './types'
 
-export async function loadSpriteSheet(name:string, dWidth?:number, dHeight?:number) {
+export async function loadSpriteSheet(name: string, dWidth?: number, dHeight?: number) {
 
   const url = `sprites/${name}.json`
   const sheetSpec = await loadJSON<SpriteSheetSpec>(url)

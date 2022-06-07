@@ -15,12 +15,13 @@ const FAST_DRAG = 1 / 5000
 const SLOW_DRAG = 1 / 1000
 
 const SIZE = {
-    // width: 16*4,
-    // height: 16*4,
-    width: 16*2,
-    height: 16*2
-
+    width: 16*4,
+    height: 16*4,
 }
+// const SIZE = {
+//     width: 16*2,
+//     height: 16*2,
+// }
 
 export class Takashi extends Entity {
     jump = this.addTrait(new Jump())

@@ -25,17 +25,8 @@
   ],
 
   "entities": [
-    {
-      "name": "cannon",
-      "pos": [8, 160]
-    }
   ],
 
   "triggers": [
-    {
-      "type": "goto",
-      "name": "1-1",
-      "pos": [50, 0]
-    }
   ]
 }

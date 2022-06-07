@@ -2,7 +2,7 @@ import { loadEntities } from './entities'
 import { Entity } from './entities/Entity'
 import { GameContext } from './GameContext'
 import { setupKeyboard } from './input'
-import { createCollisionLayer } from './layers/collision'
+// import { createCollisionLayer } from './layers/collision'
 import { createColorLayer } from './layers/color'
 import { createDashboardLayer } from './layers/dashboard'
 import { createPlayerProgressLayer } from './layers/player-progress'
@@ -84,7 +84,7 @@ async function main(canvas: HTMLCanvasElement) {
     waitScreen.comp.layers.push(playerProgressLayer)
     sceneRunner.addScene(waitScreen)
 
-    level.comp.layers.push(createCollisionLayer(level))
+    // level.comp.layers.push(createCollisionLayer(level))
     level.comp.layers.push(dashboardLayer)
     sceneRunner.addScene(level)
 
