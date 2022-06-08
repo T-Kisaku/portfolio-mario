@@ -1,7 +1,5 @@
 export const urlResolver = (url: string) => {
-    return new URL(url, import.meta.url).pathname
+    return `/portfolio-mario/${url}`
 }
 
-export const publicUrlResolver = (url: string) => {
-    return urlResolver(`../../public/${url}`)
-}
+export const publicUrlResolver = urlResolver
