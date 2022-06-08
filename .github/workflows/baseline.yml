@@ -1,4 +1,4 @@
-name: CI
+name: CI/CD
 on:
   push:
     branches: [ master, main ]
@@ -10,3 +10,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: yarn && yarn ci
+  - name: deploy
+    uses: peaceiris/actions-gh-pages@v3
+    with:
+      deploy_key: ${{ secrets.MY_ACTIONS_DEPLOY_KEY }}
+      publish_branch: gh-pages
+      publish_dir: ./docs
