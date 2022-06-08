@@ -8,13 +8,12 @@ jobs:
   ci-cd:
     runs-on: ubuntu-latest
     steps:
-    - name: Build
-      uses: actions/checkout@v2
-      run: yarn && yarn ci
-
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        deploy_key: ${{ secrets.MY_ACTIONS_DEPLOY_KEY }}
-        publish_branch: gh-pages
-        publish_dir: ./docs
+      - name: Build
+        uses: actions/checkout@v2
+        run: yarn && yarn ci
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.MY_ACTIONS_DEPLOY_KEY }}
+          publish_branch: gh-pages
+          publish_dir: ./docs
