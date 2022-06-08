@@ -5,8 +5,9 @@
   "author": "kingdaro",
   "license": "MIT",
   "scripts": {
-    "dev": "poi src/index.html --serve",
-    "build": "poi src/index.html --prod",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src --ext js,ts",
     "format": "prettier --write \"@(src|public)/**/*.@(ts|js|json|html)\"",
@@ -18,8 +19,8 @@
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.11.0",
     "npm-run-all": "4.1.5",
-    "poi": "12.8.0",
     "prettier": "2.0.5",
-    "typescript": "3.9.1-rc"
+    "typescript": "3.9.1-rc",
+    "vite": "^2.9.10"
   }
 }
