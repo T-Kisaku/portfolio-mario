@@ -3,6 +3,7 @@
  */
  const config = {
     publicDir: 'public',
+    base: '/portfolio-mario/',
     build: {
         outDir: 'docs',
     }
