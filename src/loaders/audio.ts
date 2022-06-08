@@ -1,5 +1,7 @@
-import { AudioBoard } from '../AudioBoard'
-import { loadJSON } from '.'
+import { AudioBoard } from '@/AudioBoard'
+import { loadJSON } from '@/loaders'
+import {publicUrlResolver} from '@/utils/resolver'
+
 
 export function createAudioLoader(context: AudioContext) {
   return async function loadAudio(url: string) {
@@ -13,7 +15,7 @@ export async function loadAudioBoard(name: string, audioContext: AudioContext) {
   const loadAudio = createAudioLoader(audioContext)
 
   const audioSheet = await loadJSON<{ fx: Record<string, { url: string }> }>(
-    `/sounds/${name}.json`,
+    publicUrlResolver(`sounds/${name}.json`)
   )
 
   const audioBoard = new AudioBoard()

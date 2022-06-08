@@ -4,6 +4,7 @@ import { createBackgroundLayer } from '../layers/background'
 import { createSpriteLayer } from '../layers/sprites'
 import { Level } from '../Level'
 import { loadJSON } from '.'
+import {publicUrlResolver} from '@/utils/resolver'
 import { Matrix } from '../utils/math'
 import { SpriteSheet } from '../SpriteSheet'
 import { TileResolverMatrix } from '../TileResolver'
@@ -20,7 +21,7 @@ function createTimer() {
 }
 
 function loadPattern(name: string) {
-  return loadJSON<LevelSpecPatterns>(`/sprites/patterns/${name}.json`)
+  return loadJSON<LevelSpecPatterns>(publicUrlResolver(`sprites/patterns/${name}.json`))
 }
 
 function setupBehavior(level: Level) {
@@ -95,7 +96,7 @@ export function setupTriggers(levelSpec: LevelSpec, level: Level) {
 
 export function createLevelLoader(entityFactory: EntityFactoryDict) {
   return async function loadLevel(name: string) {
-    const levelSpec = await loadJSON<LevelSpec>(`levels/${name}.json`)
+    const levelSpec = await loadJSON<LevelSpec>(publicUrlResolver(`levels/${name}.json`))
 
     const [backgroundSprites, musicPlayer, patterns] = await Promise.all([
       loadSpriteSheet(levelSpec.spriteSheet),

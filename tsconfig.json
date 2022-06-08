@@ -8,7 +8,16 @@
     "noUnusedLocals": true,
     "esModuleInterop": true,
     "downlevelIteration": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "paths": {
+      "@": ["src"],
+      "@/*": ["src/*"],
+      "@root": ["."],
+      "@root/*": ["./*"],
+      "@public": ["public"],
+      "@public/*": ["public/*"]
+    }
   },
   "include": ["src"]
 }
