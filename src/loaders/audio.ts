@@ -1,6 +1,6 @@
 import { AudioBoard } from '@/AudioBoard'
 import { loadJSON } from '@/loaders'
-import {publicUrlResolver} from '@/utils/resolver'
+import {urlResolver} from '@/utils/resolver'
 
 
 export function createAudioLoader(context: AudioContext) {
@@ -15,14 +15,14 @@ export async function loadAudioBoard(name: string, audioContext: AudioContext) {
   const loadAudio = createAudioLoader(audioContext)
 
   const audioSheet = await loadJSON<{ fx: Record<string, { url: string }> }>(
-    publicUrlResolver(`sounds/${name}.json`)
+    urlResolver(`sounds/${name}.json`)
   )
 
   const audioBoard = new AudioBoard()
 
   const audioLoadingTasks = Object.entries(audioSheet.fx).map(
     ([name, { url }]) =>
-      loadAudio(url)
+      loadAudio(urlResolver(url))
         .then(buffer => audioBoard.add(name, buffer))
         .catch(() => console.error(`failed to load ${url}`)),
   )

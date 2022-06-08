@@ -1,5 +1,5 @@
 import { loadJSON } from '.'
-import { publicUrlResolver } from '@/utils/resolver'
+import { urlResolver } from '@/utils/resolver'
 import { MusicPlayer } from '../MusicPlayer'
 
 type MusicSheetSpec = {
@@ -9,7 +9,7 @@ type MusicSheetSpec = {
 }
 
 export async function loadMusicSheet(name: string) {
-  const musicSheet = await loadJSON<MusicSheetSpec>(publicUrlResolver(`music/${name}.json`))
+  const musicSheet = await loadJSON<MusicSheetSpec>(urlResolver(`music/${name}.json`))
 
   const musicPlayer = new MusicPlayer()
   for (const [name, track] of Object.entries(musicSheet)) {

@@ -1,13 +1,13 @@
 import { createAnimation } from '../animation'
 import { loadImage, loadJSON } from '.'
-import { publicUrlResolver } from '@/utils/resolver'
+import { urlResolver } from '@/utils/resolver'
 import { SpriteSheet } from '../SpriteSheet'
 import { SpriteSheetSpec } from './types'
 
 export async function loadSpriteSheet(name: string, dWidth?: number, dHeight?: number) {
 
   const url = `sprites/${name}.json`
-  const sheetSpec = await loadJSON<SpriteSheetSpec>(publicUrlResolver(url))
+  const sheetSpec = await loadJSON<SpriteSheetSpec>(urlResolver(url))
   const image = await loadImage(sheetSpec.imageURL)
   const sprites = new SpriteSheet(image, sheetSpec.tileW, sheetSpec.tileH)
 
